@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh diem trung binh</title>
+</head>
+<body>
+<form>
+<div>
+    <label>Vật lý:</label>
+    <input type="number" id="physics"><br><br>
+
+    <label>Hóa học:</label>
+    <input type="number" id="chemistry"><br><br>
+
+    <label>Sinh học:</label>
+    <input type="number" id="biology"><br><br>
+
+    <button type="button" onclick="tinhDiem()">Tính</button>
+
+    <p>Tổng: <span id="total"></span></p>
+    <p>Trung bình: <span id="average"></span></p>
+</div>
+</form>
+<script src="calculate.js"></script>
+</body>
+</html>
