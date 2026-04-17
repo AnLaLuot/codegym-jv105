@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi tiền</title>
+</head>
+<body>
+
+<h2>Chuyển đổi tiền tệ</h2>
+
+<input type="number" id="amount" placeholder="Nhập số tiền">
+
+<select id="from_money">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+
+<select id="to_money">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+
+<button onclick="convertMoney()">Chuyển đổi</button>
+
+<p>Kết quả: <span id="output_money"></span></p>
+
+<script>
+    function convertMoney() {
+        const amount = document.getElementById("amount").value;
+        const inputmoney = document.getElementById("from_money").value;
+        const outputmoney = document.getElementById("to_money").value;
+
+        let result;
+
+        const rate = 25000;
+
+        if (inputmoney === outputmoney) {
+            result = "Không thể chuyển cùng loại tiền!";
+        } else if (inputmoney === "VND" && outputmoney === "USD") {
+            result = amount / rate;
+        } else if (inputmoney === "USD" && outputmoney === "VND") {
+            result = amount * rate;
+        }
+
+        document.getElementById("output_money").innerText = result;
+    }
+</script>
