@@ -16,9 +16,9 @@ function findValue() {
 
     if (found) {
         document.getElementById("result").innerText =
-            V + " is in the array";
+            searchValue + " is in the array";
     } else {
         document.getElementById("result").innerText =
-            V + " is not in the array";
+            searchValue + " is not in the array";
     }
 }
