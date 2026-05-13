@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+
+<p id="result"></p>
+
+<script>
+
+    function compareNumbers(a, b) {
+
+        if (a > b) {
+
+            alert("Tham số thứ nhất lớn hơn tham số thứ hai");
+
+        } else {
+
+            return a + b;
+        }
+    }
+
+    // gọi hàm
+    let result = compareNumbers(3, 5);
+
+    if (result !== undefined) {
+        document.getElementById("result").innerText =
+            "Tổng = " + result;
+    }
+
+</script>
+
+</body>
+</html>
