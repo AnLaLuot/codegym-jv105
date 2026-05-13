@@ -2,7 +2,7 @@ function findValue() {
 
     let numbers = [5, 12, 8, 20, 7, 15, 3, 10, 25, 1];
 
-    let V = parseInt(document.getElementById("value").value);
+    let searchValue = parseInt(document.getElementById("value").value);
 
     let found = false;
 
