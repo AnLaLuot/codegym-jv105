@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+
+<p id="fahrenheit"></p>
+<p id="kelvin"></p>
+
+<script>
+
+    class Temperature {
+
+        constructor(celsius) {
+
+            if (celsius < -273) {
+                this.celsius = -273;
+            } else {
+                this.celsius = celsius;
+            }
+        }
+
+        toFahrenheit() {
+            return (this.celsius * 9 / 5) + 32;
+        }
+
+        toKelvin() {
+            return this.celsius + 273.15;
+        }
+    }
+
+    let temperature = new Temperature(25);
+
+    document.getElementById("fahrenheit").innerText =
+        "Fahrenheit = " + temperature.toFahrenheit().toFixed(2);
+
+    document.getElementById("kelvin").innerText =
+        "Kelvin = " + temperature.toKelvin().toFixed(2);
+
+</script>
+
+</body>
+</html>
