@@ -53,7 +53,8 @@ function start() {
 
     let result = "";
 
-    for (let i = 1; i <= 10; i++) {
+    const SWITCH_COUNT = 10;
+    for (let i = 1; i <= SWITCH_COUNT; i++) {
 
         result += "Lần " + i + "\n";
 
