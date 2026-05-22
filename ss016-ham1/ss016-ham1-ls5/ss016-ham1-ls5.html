@@ -10,7 +10,6 @@
 
 <script>
 
-    // mảng ngôi sao
     let stars = [
         "Polaris",
         "Aldebaran",
@@ -21,7 +20,6 @@
         "Regulus"
     ];
 
-    // mảng chòm sao tương ứng
     let constellations = [
         "Ursa Minor",
         "Taurus",
@@ -32,7 +30,6 @@
         "Leo"
     ];
 
-    // hàm tìm chòm sao
     function findConstellation(starName) {
 
         for (let i = 0; i < stars.length; i++) {
@@ -45,13 +42,10 @@
         return "Không tìm thấy ngôi sao";
     }
 
-    // nhập tên ngôi sao
     let input = prompt("Nhập tên ngôi sao:");
 
-    // gọi hàm
     let result = findConstellation(input);
 
-    // hiển thị kết quả
     document.getElementById("result").innerText =
         result;
 
