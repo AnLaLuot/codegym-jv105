@@ -1,25 +1,32 @@
 function printPrimes() {
+
+    const TOTAL_PRIMES = 20;
+
     let count = 0;
-    let n = 2;
+
+    let number = 2;
+
     let result = "";
 
-    while (count < 20) {
+    while (count < TOTAL_PRIMES) {
         let isPrime = true;
+        for (let divisor = 2;
+             divisor <= Math.sqrt(number);
+             divisor++) {
 
-        for (let i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i === 0) {
+            if (!(number % divisor)) {
+
                 isPrime = false;
+
                 break;
             }
         }
-
         if (isPrime) {
-            result += n + " ";
+            result += `${number} `;
             count++;
         }
-
-        n++;
+        number++;
     }
-
-    document.getElementById("result").innerText = result;
+    document.getElementById("result").innerText =
+        result;
 }
