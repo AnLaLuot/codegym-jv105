@@ -8,19 +8,25 @@ function meterToFoot(meter) {
 
 function convert() {
 
-    let result = "Feet -> Meter\n";
+    let result = "";
 
-    for (let i = 1; i <= 10; i++) {
-        result += i + " feet = "
-            + footToMeter(i).toFixed(3)
+    result += "Feet -> Meter\n";
+
+    for (let feet = 1; feet <= 10; feet++) {
+
+        result += feet + " feet = "
+            + footToMeter(feet).toFixed(3)
             + " meters\n";
     }
 
-    result += "\nMeter -> Feet\n";
+    result += "\n";
 
-    for (let i = 20; i <= 65; i += 5) {
-        result += i + " meters = "
-            + meterToFoot(i).toFixed(3)
+    result += "Meter -> Feet\n";
+
+    for (let meter = 20; meter <= 65; meter += 5) {
+
+        result += meter + " meters = "
+            + meterToFoot(meter).toFixed(3)
             + " feet\n";
     }
 
