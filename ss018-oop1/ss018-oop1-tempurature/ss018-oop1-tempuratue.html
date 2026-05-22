@@ -15,11 +15,7 @@
 
         constructor(celsius) {
 
-            if (celsius < -273) {
-                this.celsius = -273;
-            } else {
-                this.celsius = celsius;
-            }
+            this.celsius = Math.max(celsius, -273);
         }
 
         toFahrenheit() {
@@ -34,10 +30,12 @@
     let temperature = new Temperature(25);
 
     document.getElementById("fahrenheit").innerText =
-        "Fahrenheit = " + temperature.toFahrenheit().toFixed(2);
+        "Fahrenheit = "
+        + temperature.toFahrenheit().toFixed(2);
 
     document.getElementById("kelvin").innerText =
-        "Kelvin = " + temperature.toKelvin().toFixed(2);
+        "Kelvin = "
+        + temperature.toKelvin().toFixed(2);
 
 </script>
 
