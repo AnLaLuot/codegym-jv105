@@ -34,21 +34,20 @@ class Human {
     }
 
     say(message) {
-        return this.name + ": " + message;
+        return `${this.name}: ${message}`;
     }
 
     eat(apple) {
 
-        if (!apple.isEmpty()) {
-
-            apple.decrease();
-
-            this.weight++;
-
-            return this.name + " ăn 1 miếng táo";
+        if (apple.isEmpty()) {
+            return "Táo đã hết";
         }
 
-        return "Táo đã hết";
+        apple.decrease();
+
+        this.weight++;
+
+        return `${this.name} ăn 1 miếng táo`;
     }
 
     checkApple(apple) {
@@ -64,6 +63,15 @@ class Human {
     }
 }
 
+function showInfo(human, apple) {
+
+    return `${human.getName()} ăn 1 miếng táo
+Khối lượng táo: ${apple.getWeight()}
+Cân nặng ${human.getName()}: ${human.getWeight()}
+
+`;
+}
+
 function start() {
 
     let apple = new Apple();
@@ -74,17 +82,16 @@ function start() {
 
     let result = "";
 
-    result += adam.eat(apple) + "\n";
-
-    result += "Khối lượng táo: " + apple.getWeight() + "\n";
-
-    result += "Cân nặng Adam: " + adam.getWeight() + "\n\n";
-
-    result += eva.eat(apple) + "\n";
-
-    result += "Khối lượng táo: " + apple.getWeight() + "\n";
-
-    result += "Cân nặng Eva: " + eva.getWeight();
-
+    while (!apple.isEmpty()) {
+        result += adam.eat(apple) + "\n";
+        result += "Khối lượng táo: " + apple.getWeight() + "\n";
+        result += "Cân nặng Adam: " + adam.getWeight() + "\n\n";
+        if (apple.isEmpty()) {
+            break;
+        }
+        result += eva.eat(apple) + "\n";
+        result += "Khối lượng táo: " + apple.getWeight() + "\n";
+        result += "Cân nặng Eva: " + eva.getWeight() + "\n\n";
+    }
     document.getElementById("result").innerText = result;
 }
