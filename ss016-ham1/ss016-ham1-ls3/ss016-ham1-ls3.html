@@ -11,18 +11,13 @@
 <script>
 
     function compareNumbers(a, b) {
-
         if (a > b) {
-
             alert("Tham số thứ nhất lớn hơn tham số thứ hai");
-
-        } else {
-
-            return a + b;
+            return;
         }
+        return a + b;
     }
 
-    // gọi hàm
     let result = compareNumbers(3, 5);
 
     if (result !== undefined) {
