@@ -24,22 +24,28 @@ class SwitchButton {
         this.lamp = lamp;
     }
 
-    switchOn() {
+    changeStatus(status) {
 
-        this.status = true;
+        this.status = status;
 
-        this.lamp.turnOn();
+        if (status) {
 
-        return "Đèn đang bật";
-    }
+            this.lamp.turnOn();
 
-    switchOff() {
-
-        this.status = false;
+            return "Đèn đang bật";
+        }
 
         this.lamp.turnOff();
 
         return "Đèn đang tắt";
+    }
+
+    switchOn() {
+        return this.changeStatus(true);
+    }
+
+    switchOff() {
+        return this.changeStatus(false);
     }
 }
 
