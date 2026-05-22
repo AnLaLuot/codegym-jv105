@@ -1,14 +1,18 @@
 function checkAge() {
-    const age = parseInt(document.getElementById("age").value);
+
+    const MINIMUM_AGE = 15;
+
+    const age =
+        parseInt(document.getElementById("age").value);
 
     if (isNaN(age) || age <= 0) {
-        document.getElementById("result").innerText = "Tuổi không hợp lệ!";
+        document.getElementById("result").innerText =
+            "Tuổi không hợp lệ!";
         return;
     }
 
-    if (age >= 15) {
-        document.getElementById("result").innerText = "Đủ điều kiện vào lớp 10";
-    } else {
-        document.getElementById("result").innerText = "Không đủ điều kiện vào lớp 10";
-    }
+    document.getElementById("result").innerText =
+        age >= MINIMUM_AGE
+            ? "Đủ điều kiện vào lớp 10"
+            : "Không đủ điều kiện vào lớp 10";
 }
