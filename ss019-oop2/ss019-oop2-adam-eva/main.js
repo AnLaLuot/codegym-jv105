@@ -74,28 +74,17 @@ function start() {
 
     let result = "";
 
-    while (!apple.isEmpty()) {
+    result += adam.eat(apple) + "\n";
 
-        result += adam.eat(apple) + "\n";
+    result += "Khối lượng táo: " + apple.getWeight() + "\n";
 
-        result += "Khối lượng táo: "
-            + apple.getWeight() + "\n";
+    result += "Cân nặng Adam: " + adam.getWeight() + "\n\n";
 
-        result += "Cân nặng Adam: "
-            + adam.getWeight() + "\n\n";
+    result += eva.eat(apple) + "\n";
 
-        if (apple.isEmpty()) {
-            break;
-        }
+    result += "Khối lượng táo: " + apple.getWeight() + "\n";
 
-        result += eva.eat(apple) + "\n";
-
-        result += "Khối lượng táo: "
-            + apple.getWeight() + "\n";
-
-        result += "Cân nặng Eva: "
-            + eva.getWeight() + "\n\n";
-    }
+    result += "Cân nặng Eva: " + eva.getWeight();
 
     document.getElementById("result").innerText = result;
 }
