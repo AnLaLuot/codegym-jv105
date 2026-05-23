@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7e91919-8c2c-4db1-abf6-61e3cf5b0c96" name="Changes" comment="" />
+    <list default="true" id="9fbb2a19-48d1-4a3b-b9ba-d797a532fad0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/calculator.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/calculator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,13 +22,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1,
-  &quot;fromUser&quot;: false
-}</component>
-  <component name="ProjectId" id="3CU8VgZgyFrDDPOGcR2fHRBUZTe" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 2,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3CUC2Nca55F3wmYNEbTl46RJIFS" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,18 +36,19 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.nhietdo.html.executor": "Run",
+    "JavaScript Debug.calculator.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "master",
     "javascript.preferred.runtime.type.id": "node",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -56,13 +61,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e7e91919-8c2c-4db1-abf6-61e3cf5b0c96" name="Changes" comment="" />
-      <created>1776428813324</created>
+      <changelist id="9fbb2a19-48d1-4a3b-b9ba-d797a532fad0" name="Changes" comment="" />
+      <created>1776430554585</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1776428813324</updated>
-      <workItem from="1776428814367" duration="208000" />
-      <workItem from="1776429676986" duration="869000" />
+      <updated>1776430554585</updated>
+      <workItem from="1776430555619" duration="686000" />
     </task>
     <servers />
   </component>
