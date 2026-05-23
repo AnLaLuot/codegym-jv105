@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7e91919-8c2c-4db1-abf6-61e3cf5b0c96" name="Changes" comment="" />
+    <list default="true" id="da756235-f411-4889-ab37-7e5d8d2402b2" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ss009_script/ss009_bienkieuvatoantu/Bai2/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss009_script/ss009_bienkieuvatoantu/Bai2/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss009_script/ss009_bienkieuvatoantu/Bai2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss009_script/ss009_bienkieuvatoantu/Bai2/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,18 +16,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1,
-  &quot;fromUser&quot;: false
+  &quot;associatedIndex&quot;: 4
 }</component>
-  <component name="ProjectId" id="3CU8VgZgyFrDDPOGcR2fHRBUZTe" />
+  <component name="ProjectId" id="3CiAN6rjWUl70X6cXH58qi6SS3n" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,21 +35,31 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
-    "JavaScript Debug.nhietdo.html.executor": "Run",
+    "JavaScript Debug.check.html.executor": "Run",
+    "JavaScript Debug.checkage.html.executor": "Run",
+    "JavaScript Debug.day-month.html.executor": "Run",
+    "JavaScript Debug.maytinh.html.executor": "Run",
+    "JavaScript Debug.tinhcannang.html.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "loginform",
     "javascript.preferred.runtime.type.id": "node",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CodeGym\codegym-jv105\ss010_cautrucdkien\B1" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -56,13 +69,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e7e91919-8c2c-4db1-abf6-61e3cf5b0c96" name="Changes" comment="" />
-      <created>1776428813324</created>
+      <changelist id="da756235-f411-4889-ab37-7e5d8d2402b2" name="Changes" comment="" />
+      <created>1776857973782</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1776428813324</updated>
-      <workItem from="1776428814367" duration="208000" />
-      <workItem from="1776429676986" duration="869000" />
+      <updated>1776857973782</updated>
+      <workItem from="1776857974813" duration="1795000" />
     </task>
     <servers />
   </component>
