@@ -1,7 +1,7 @@
 function checkAge() {
     const age = parseInt(document.getElementById("age").value);
 
-    if (isNaN(age) || age <= 0) {
+    if (isNaN(age) || age <= 1) {
         document.getElementById("result").innerText = "Tuổi không hợp lệ!";
         return;
     }

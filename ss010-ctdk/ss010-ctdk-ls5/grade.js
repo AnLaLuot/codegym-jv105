@@ -12,14 +12,6 @@ function xepLoai() {
 
     const AVERAGE = 5;
 
-    const EXCELLENT_RANK = "Giỏi";
-
-    const GOOD_RANK = "Khá";
-
-    const AVERAGE_RANK = "Trung bình";
-
-    const WEAK_RANK = "Yếu";
-
     const test =
         parseFloat(document.getElementById("test").value);
 
@@ -30,13 +22,10 @@ function xepLoai() {
         parseFloat(document.getElementById("final").value);
 
     if (isNaN(test) || isNaN(mid) || isNaN(final)) {
-
         document.getElementById("result").innerText =
-            `Vui lòng nhập đầy đủ điểm!`;
-
+            "Vui lòng nhập đầy đủ điểm!";
         return;
     }
-
     const avg =
         (
             test
@@ -44,21 +33,20 @@ function xepLoai() {
             + final * FINAL_WEIGHT
         ) / TOTAL_WEIGHT;
 
-    let rank = WEAK_RANK;
+    let rank = "Yếu";
 
     if (avg >= EXCELLENT) {
 
-        rank = EXCELLENT_RANK;
+        rank = "Giỏi";
 
     } else if (avg >= GOOD) {
 
-        rank = GOOD_RANK;
+        rank = "Khá";
 
     } else if (avg >= AVERAGE) {
 
-        rank = AVERAGE_RANK;
+        rank = "Trung bình";
     }
-
     document.getElementById("result").innerText =
         `Điểm TB: ${avg.toFixed(2)} - Xếp loại: ${rank}`;
 }

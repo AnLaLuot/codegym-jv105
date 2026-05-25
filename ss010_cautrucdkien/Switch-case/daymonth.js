@@ -1,35 +1,78 @@
 function tinhSoNgay() {
-    const month = parseInt(document.getElementById("month").value);
 
-    if (isNaN(month) || month < 1 || month > 12) {
-        document.getElementById("result").innerText = "Vui lòng nhập tháng hợp lệ (1-12)";
+    const JANUARY = 1;
+
+    const FEBRUARY = 2;
+
+    const MARCH = 3;
+
+    const APRIL = 4;
+
+    const MAY = 5;
+
+    const JUNE = 6;
+
+    const JULY = 7;
+
+    const AUGUST = 8;
+
+    const SEPTEMBER = 9;
+
+    const OCTOBER = 10;
+
+    const NOVEMBER = 11;
+
+    const DECEMBER = 12;
+
+    const MIN_MONTH = JANUARY;
+
+    const MAX_MONTH = DECEMBER;
+
+    const month =
+        parseInt(document.getElementById("month").value);
+
+    if (
+        isNaN(month)
+        || month < MIN_MONTH
+        || month > MAX_MONTH
+    ) {
+
+        document.getElementById("result").innerText =
+            "Vui lòng nhập tháng hợp lệ (1-12)";
+
         return;
     }
 
-    let days;
+    let days = "";
 
     switch (month) {
-        case 1:
-        case 3:
-        case 5:
-        case 7:
-        case 8:
-        case 10:
-        case 12:
+
+        case JANUARY:
+        case MARCH:
+        case MAY:
+        case JULY:
+        case AUGUST:
+        case OCTOBER:
+        case DECEMBER:
+
             days = "31 ngày";
+
             break;
 
-        case 4:
-        case 6:
-        case 9:
-        case 11:
+        case APRIL:
+        case JUNE:
+        case SEPTEMBER:
+        case NOVEMBER:
+
             days = "30 ngày";
+
             break;
 
-        case 2:
+        case FEBRUARY:
+
             days = "28 hoặc 29 ngày";
-            break;
     }
 
-    document.getElementById("result").innerText = "Tháng " + month + " có " + days;
+    document.getElementById("result").innerText =
+        `Tháng ${month} có ${days}`;
 }
