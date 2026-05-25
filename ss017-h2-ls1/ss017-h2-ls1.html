@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Square Calculation</title>
+</head>
+<body>
+
+<input type="number" id="number" placeholder="Nhập số">
+
+<button onclick="calculateSquare()">Tính</button>
+
+<p id="result"></p>
+
+<script>
+
+    function square(number) {
+        return number * number;
+    }
+
+    function calculateSquare() {
+
+        let number =
+            parseFloat(document.getElementById("number").value);
+
+        let result = square(number);
+
+        document.getElementById("result").innerText =
+            "Bình phương = " + result;
+    }
+
+</script>
+
+</body>
+</html>
