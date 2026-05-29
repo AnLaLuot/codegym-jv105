@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Check character number</title>
+</head>
+<body>
+
+<input type="text" id="character" placeholder="Nhập 1 ký tự">
+
+<button onclick="checkCharacter()">Kiểm tra</button>
+
+<p id="result"></p>
+
+<script>
+
+    function isNumber(character) {
+
+        return character >= '0' && character <= '9';
+    }
+
+    function checkCharacter() {
+
+        let character =
+            document.getElementById("character").value;
+
+        let result = isNumber(character);
+
+        document.getElementById("result").innerText =
+            result;
+    }
+
+</script>
+
+</body>
+</html>

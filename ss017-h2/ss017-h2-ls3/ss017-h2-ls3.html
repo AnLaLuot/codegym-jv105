@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculate Factorial</title>
+</head>
+<body>
+
+<input type="number" id="number" placeholder="Nhập số nguyên">
+
+<button onclick="calculateFactorial()">Tính</button>
+
+<p id="result"></p>
+
+<script>
+
+    function factorial(number) {
+
+        let result = 1;
+
+        for (let i = 1; i <= number; i++) {
+            result *= i;
+        }
+
+        return result;
+    }
+
+    function calculateFactorial() {
+
+        let number =
+            parseInt(document.getElementById("number").value);
+
+        let result = factorial(number);
+
+        document.getElementById("result").innerText =
+            "Giai thừa = " + result;
+    }
+
+</script>
+
+</body>
+</html>
