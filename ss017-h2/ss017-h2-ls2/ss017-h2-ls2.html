@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle</title>
+</head>
+<body>
+
+<input type="number" id="radius" placeholder="Nhập bán kính">
+
+<button onclick="calculateCircle()">Tính</button>
+
+<p id="area"></p>
+<p id="perimeter"></p>
+
+<script>
+
+    function calculateArea(radius) {
+        return Math.PI * radius * radius;
+    }
+
+    function calculatePerimeter(radius) {
+        return 2 * Math.PI * radius;
+    }
+
+    function calculateCircle() {
+
+        let radius =
+            parseFloat(document.getElementById("radius").value);
+
+        let area = calculateArea(radius);
+
+        let perimeter = calculatePerimeter(radius);
+
+        document.getElementById("area").innerText =
+            "Diện tích = " + area.toFixed(2);
+
+        document.getElementById("perimeter").innerText =
+            "Chu vi = " + perimeter.toFixed(2);
+    }
+
+</script>
+
+</body>
+</html>
